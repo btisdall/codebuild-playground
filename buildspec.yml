@@ -9,9 +9,10 @@ phases:
   install:
     commands:
       - apt-get update && apt-get -y install unzip jq curl
-      - curl https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip -o /tmp/packer.zip
+      - curl https://releases.hashicorp.com/packer/1.2.2/packer_1.2.2_linux_amd64.zip -o /tmp/packer.zip
       - unzip /tmp/packer.zip
       - mv packer /usr/local/bin
+      - packer version
   pre_build:
     commands: []
   build:
