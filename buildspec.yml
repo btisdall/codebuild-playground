@@ -1,0 +1,22 @@
+version: 0.2
+
+env:
+  variables:
+    key: PACKER_VERSION
+    key: 1.2.2
+
+phases:
+  install:
+    commands:
+      - apt-get update && apt-get -y install unzip jq curl
+      - curl https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip -o /tmp/packer.zip
+      - unzip /tmp/packer.zip
+      - mv packer /usr/local/bin
+  pre_build:
+    commands: []
+  build:
+    commands:
+      - command
+      - command
+  post_build:
+    commands: []
