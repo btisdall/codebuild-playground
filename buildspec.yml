@@ -13,6 +13,7 @@ phases:
       - unzip /tmp/packer.zip
       - mv packer /usr/local/bin
       - packer version
+      - aws --version
   pre_build:
     commands: []
   build:
