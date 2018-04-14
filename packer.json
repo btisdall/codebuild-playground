@@ -9,7 +9,7 @@
     "source_ami": "ami-d834aba1",
     "instance_type": "t2.micro",
     "ami_name": "bentis-amazon-linux",
-    "ami_version": "packer {{isotime \"20060102T150405Z\"}}",
+    "ami_version": "{{isotime \"20060102T150405Z\"}}",
     "jc_connect_key": "{{env `JC_CONNECT_KEY`}}"
   },
   "builders": [
