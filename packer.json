@@ -6,9 +6,9 @@
     "vpc_id": "vpc-48d72823",
     "subnet_id": "subnet-4ed72825",
     "security_group_id": "sg-24f71459",
-    "source_ami": "ami-d834aba1",
+    "source_ami": "ami-74e6b80d",
     "instance_type": "t2.micro",
-    "ami_name": "bentis-amazon-linux",
+    "ami_name": "bentis-ubuntu-1604",
     "ami_version": "{{isotime \"20060102T150405Z\"}}",
     "jc_connect_key": "{{env `JC_CONNECT_KEY`}}"
   },
@@ -25,7 +25,7 @@
       "instance_type": "{{user `instance_type`}}",
       "ami_name": "{{user `ami_name`}}-{{user `ami_version` | clean_ami_name}}",
       "ami_groups": "{{user `ami_groups`}}",
-      "ssh_username": "ec2-user",
+      "ssh_username": "ubuntu",
       "ssh_file_transfer_method": "sftp",
       "ssh_pty": true,
       "tags": {
