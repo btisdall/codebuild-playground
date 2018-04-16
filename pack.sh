@@ -5,4 +5,6 @@ curl https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VER
 unzip /tmp/packer.zip
 mv packer /usr/local/bin
 
-packer build -color=false packer.json
+echo DONE
+
+#packer build -color=false packer.json
